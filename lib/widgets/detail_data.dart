@@ -20,9 +20,9 @@ class DetailData extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-                color: Colors.red.withOpacity(0.5),
-                offset: Offset(0, -5),
-                blurRadius: 8),
+                color: Colors.red.withOpacity(0.4),
+                offset: Offset(0, -4),
+                blurRadius: 4),
           ],
         ),
         child: Column(
@@ -40,9 +40,10 @@ class DetailData extends StatelessWidget {
                     child: Text(
                       "Descrição",
                       style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                   InkWell(
@@ -70,6 +71,33 @@ class DetailData extends StatelessWidget {
                         color: Colors.black.withOpacity(0.5),
                       ),
                     ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Altura"),
+                          Text("1.10 m"),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Peso"),
+                          Text("0.8 m"),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),
